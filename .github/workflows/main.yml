@@ -1,0 +1,22 @@
+on:
+  pull_request:
+    branches-ignore:
+      - 'master'
+jobs:
+  test-my-action:
+    runs-on: ubuntu-latest
+    name: Auto trigger ci
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Install moreutils
+        run: sudo apt-get install moreutils
+      - name: Git auto commit log
+        uses: tripheo0412/auto-commit-log-action@v2.0.2
+        with:
+            commit_message: <TriggerCI>
+            branch: ${{ github.head_ref }}
+            bot_user_name: Integrify-Code-Police
+            bot_user_email: admin.service@integrify.io

@@ -1,0 +1,41 @@
+.container {
+  width: 1164px;
+  opacity: 1;
+  background: whitesmoke;
+}
+.header {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.title {
+  font: Bold 34px Poppins;
+  line-height: 48px;
+  letter-spacing: 1.7px;
+  color: #10131a;
+  opacity: 1;
+  margin-bottom: 28px;
+}
+.description {
+  display: flex;
+  font: 24px Poppins;
+  line-height: 40px;
+  letter-spacing: 0px;
+  color: #10131a;
+  opacity: 1;
+  margin-bottom: 74px;
+}
+.container p {
+  margin-bottom: 0;
+}
+
+.childrens {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.childrens > div {
+  flex: 1;
+}
