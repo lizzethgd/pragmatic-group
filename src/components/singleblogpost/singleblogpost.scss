@@ -1,53 +1,50 @@
-$primaryColor: #1976D2;
+$primaryColor: #1976d2;
 $mainWhite: #fff;
-$offWhite: #F2F2F2;
-$mainBlack: #10131A;
-$backgroundGrey: #FAFAFA;
+$offWhite: #f2f2f2;
+$mainBlack: #10131a;
+$backgroundGrey: #fafafa;
 $darkGrey: #707070;
 $mainTransition: all 0.3s linear;
 $mainSpacing: 0px;
-$lightShadow:  0px 3px 10px #00000033;
+$lightShadow: 0px 3px 10px #00000033;
 
 $extra-small-devices: 400px;
 $small-devices: 600px;
 $medium-devices: 768px;
 $large-devices: 992px;
-$extra-large-devices: 1200px; 
+$extra-large-devices: 1200px;
 
-
-.blog_content{
-    text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem
+.blog_content {
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.blog_richtextcontent{
-    text-align: justify;
-    font-size: 16px
+.blog_richtextcontent {
+  text-align: justify;
+  font-size: 16px;
 }
 
-.blog_img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    width: 354px;
-    height: 244px
+.blog_img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 354px;
+  height: 244px;
 }
 
 //  for small mobile style ...
-@media only screen and (max-width: $extra-small-devices){
-
-  .blog_img{
-     width: 100%
+@media only screen and (max-width: $extra-small-devices) {
+  .blog_img {
+    width: 100%;
   }
 
-  .blog_content{
-     margin-left: 0rem;
-     margin-right: 0rem
-  }    
-
+  .blog_content {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
 }
 
 // for small tablets and large mobiles style ...

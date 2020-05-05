@@ -18,7 +18,7 @@ module.exports = {
         forceFullSync: true,
       },
     },
-    `gatsby-plugin-react-helmet`, 
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
@@ -71,20 +71,19 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-          plugins: [
-            {
-              resolve: `gatsby-remark-relative-images`,
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false,
             },
-              {
-                  resolve: 'gatsby-remark-images',
-                  options: {
-                      maxWidth: 750,
-                      linkImagesToOriginal: false
-                  }
-              }
-              
-          ]
-      }
-  },
+          },
+        ],
+      },
+    },
   ],
 }
